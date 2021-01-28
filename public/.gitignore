@@ -1,0 +1,5 @@
+*
+!.gitignore
+!index.php
+!router.php
+!robots.txt

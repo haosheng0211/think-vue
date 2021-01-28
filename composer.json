@@ -1,0 +1,26 @@
+{
+  "name": "haosheng0211/think-vue",
+  "description": "the new thinkphp framework",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.3.0",
+    "topthink/framework": "^6.0.0",
+    "topthink/think-orm": "^2.0",
+    "topthink/think-view": "v1.0.14"
+  },
+  "autoload": {
+    "psr-4": {
+      "app\\": "app",
+      "extend\\": "extend"
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "@php think service:discover",
+      "@php think vendor:publish"
+    ]
+  }
+}
